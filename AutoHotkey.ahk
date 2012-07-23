@@ -8,6 +8,9 @@
 ; AppsKey + f Escape
 Appskey & f::Send {Escape}
 
+; AppsKey + c Backspace 
+Appskey & c::Send {BackSpace}
+
 
 ; AppsKey + hjkl	Cursor Movement
 

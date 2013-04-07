@@ -20,3 +20,7 @@ keycode 44 = j J Down
 keycode 45 = k K Up
 keycode 46 = l L Right
 
+! norwegian chars
+keycode 34 = bracketleft braceleft aring Aring
+keycode 47 = semicolon colon oslash Ooblique
+keycode 48 = apostrophe quotedbl ae AE

@@ -11,6 +11,9 @@ Appskey & f::Send {Escape}
 ; AppsKey + c Backspace 
 Appskey & c::Send {BackSpace}
 
+; Appskey + r F8 for powershell
+Appskey & r::Send {F8}
+
 
 ; AppsKey + hjkl	Cursor Movement
 
@@ -68,7 +71,7 @@ AppsKey & e::SendInput {Alt down}{F4}{Alt up}
 
 AppsKey & n::SendInput {Blind}{BS Down}
 AppsKey & BS::SendInput {Blind}{BS Down}
-AppsKey & r::SendInput {Blind}{Esc Down}
+;AppsKey & r::SendInput {Blind}{Esc Down}
 
 ; Make AppsKey & Enter equivalent to Control+Enter
 AppsKey & Enter::SendInput {Ctrl down}{Enter}{Ctrl up}
@@ -79,3 +82,4 @@ AppsKey & Enter::SendInput {Ctrl down}{Enter}{Ctrl up}
 
 ; Make Windows Key + Apps Key work like Caps Lock
 #AppsKey::Capslock
+

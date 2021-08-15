@@ -5,81 +5,81 @@
 ; See the AutoHotKey docs at http://www.autohotkey.com/docs/  for AutoHotKey documentation
 ; Most of the syntax is described at http://www.autohotkey.com/docs/Hotkeys.htm
 
-; AppsKey + f Escape
-Appskey & f::Send {Escape}
+; F24 + f Escape
+F24 & f::Send {Escape}
 
-; AppsKey + c Backspace 
-Appskey & c::Send {BackSpace}
+; F24 + c Backspace 
+F24 & c::Send {BackSpace}
 
 ; Appskey + r F8 for powershell
-Appskey & r::Send {F8}
+F24 & r::Send {F8}
 
 
-; AppsKey + hjkl	Cursor Movement
+; F24 + hjkl	Cursor Movement
 
-Appskey & k::Send {Blind}{Up DownTemp}
-AppsKey & k up::Send {Blind}{Up Up}
+F24 & k::Send {Blind}{Up DownTemp}
+F24 & k up::Send {Blind}{Up Up}
 
-AppsKey & j::Send {Blind}{Down DownTemp}
-AppsKey & j up::Send {Blind}{Down Up}
+F24 & j::Send {Blind}{Down DownTemp}
+F24 & j up::Send {Blind}{Down Up}
 
-AppsKey & h::Send {Blind}{Left DownTemp}
-AppsKey & h up::Send {Blind}{Left Up}
+F24 & h::Send {Blind}{Left DownTemp}
+F24 & h up::Send {Blind}{Left Up}
 
-AppsKey & l::Send {Blind}{Right DownTemp}
-AppsKey & l up::Send {Blind}{Right Up}
-
-
-; AppsKey + uiop
-
-AppsKey & i::SendInput {Blind}{PgUp Down}
-AppsKey & i up::SendInput {Blind}{PgUp Up}
-
-AppsKey & u::SendInput {Blind}{PgDn Down}
-AppsKey & u up::SendInput {Blind}{PgDn Up}
-
-AppsKey & o::SendInput {Blind}{Home Down}
-AppsKey & o up::SendInput {Blind}{Home Up}
-
-AppsKey & p::SendInput {Blind}{End Down}
-AppsKey & p up::SendInput {Blind}{End Up}
+F24 & l::Send {Blind}{Right DownTemp}
+F24 & l up::Send {Blind}{Right Up}
 
 
-; AppsKey + asdf
+; F24 + uiop
 
-AppsKey & a::SendInput {Ctrl Down}{a Down}
-AppsKey & a up::SendInput {Ctrl Up}{a Up}
+F24 & i::SendInput {Blind}{PgUp Down}
+F24 & i up::SendInput {Blind}{PgUp Up}
 
-AppsKey & s::SendInput {Ctrl Down}{x Down}
-AppsKey & s up::SendInput {Ctrl Up}{x Up}
+F24 & u::SendInput {Blind}{PgDn Down}
+F24 & u up::SendInput {Blind}{PgDn Up}
 
-AppsKey & d::SendInput {Ctrl Down}{c Down}
-AppsKey & d up::SendInput {Ctrl Up}{c Up}
+F24 & o::SendInput {Blind}{Home Down}
+F24 & o up::SendInput {Blind}{Home Up}
 
-;AppsKey & f::SendInput {Ctrl Down}{v Down}
-;AppsKey & f up::SendInput {Ctrl Up}{v Up}
+F24 & p::SendInput {Blind}{End Down}
+F24 & p up::SendInput {Blind}{End Up}
+
+
+; F24 + asdf
+
+F24 & a::SendInput {Ctrl Down}{a Down}
+F24 & a up::SendInput {Ctrl Up}{a Up}
+
+F24 & s::SendInput {Ctrl Down}{x Down}
+F24 & s up::SendInput {Ctrl Up}{x Up}
+
+F24 & d::SendInput {Ctrl Down}{c Down}
+F24 & d up::SendInput {Ctrl Up}{c Up}
+
+;F24 & f::SendInput {Ctrl Down}{v Down}
+;F24 & f up::SendInput {Ctrl Up}{v Up}
 			
-AppsKey::SendInput {AppsKey Down}
-AppsKey up::SendInput {AppsKey Up}
+F24::SendInput {F24 Down}
+F24 up::SendInput {F24 Up}
 
 
-; AppsKey + gwenr<BS>
+; F24 + gwenr<BS>
 
-AppsKey & g::SendInput {Blind}{Del Down}
-AppsKey & w::SendInput {Ctrl down}{F4}{Ctrl up}
-AppsKey & e::SendInput {Alt down}{F4}{Alt up}
+F24 & g::SendInput {Blind}{Del Down}
+F24 & w::SendInput {Ctrl down}{F4}{Ctrl up}
+F24 & e::SendInput {Alt down}{F4}{Alt up}
 
-AppsKey & n::SendInput {Blind}{BS Down}
-AppsKey & BS::SendInput {Blind}{BS Down}
-;AppsKey & r::SendInput {Blind}{Esc Down}
+F24 & n::SendInput {Blind}{BS Down}
+F24 & BS::SendInput {Blind}{BS Down}
+;F24 & r::SendInput {Blind}{Esc Down}
 
-; Make AppsKey & Enter equivalent to Control+Enter
-AppsKey & Enter::SendInput {Ctrl down}{Enter}{Ctrl up}
+; Make F24 & Enter equivalent to Control+Enter
+F24 & Enter::SendInput {Ctrl down}{Enter}{Ctrl up}
 
-; Make AppsKey & Alt Equivalent to Control+Alt
-!AppsKey::SendInput {Ctrl down}{Alt Down}
-!AppsKey up::SendInput {Ctrl up}{Alt up}
+; Make F24 & Alt Equivalent to Control+Alt
+!F24::SendInput {Ctrl down}{Alt Down}
+!F24 up::SendInput {Ctrl up}{Alt up}
 
 ; Make Windows Key + Apps Key work like Caps Lock
-#AppsKey::Capslock
+#F24::Capslock
 
